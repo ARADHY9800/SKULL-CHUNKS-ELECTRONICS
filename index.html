@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKULL CHUNKS</title>
+    <style>
+        /* Basic styles for layout and appearance */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { color: #fff; background-color: #1a1a1a; }
+        header { background: #000; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        header nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        header nav a:hover { color: #76b900; }
+
+        /* Hero section styling */
+        .hero {
+            height: 90vh;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            display: flex; justify-content: center; align-items: center; text-align: center; color: #fff; flex-direction: column;
+        }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero p { font-size: 1.2em; max-width: 600px; }
+        .hero button { margin-top: 20px; padding: 10px 30px; font-size: 1.1em; background-color: #76b900; color: #fff; border: none; cursor: pointer; transition: 0.3s; }
+        .hero button:hover { background-color: #5c9400; }
+
+        /* Products section styling */
+        .products { padding: 50px 20px; text-align: center; }
+        .products h2 { margin-bottom: 20px; font-size: 2em; }
+        .product-cards { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .card { background: #333; border-radius: 10px; padding: 20px; max-width: 300px; text-align: center; transition: 0.3s; }
+        .card:hover { transform: scale(1.05); }
+        .card img { width: 100%; border-radius: 10px; }
+        .card h3 { margin: 15px 0; }
+        .card p { font-size: 0.9em; line-height: 1.5; color: #ccc; }
+        .card button { margin-top: 10px; padding: 10px 20px; font-size: 0.9em; background-color: #76b900; color: #fff; border: none; cursor: pointer; transition: 0.3s; }
+        .card button:hover { background-color: #5c9400; }
+
+        /* About section styling */
+        .about { padding: 50px 20px; text-align: center; background: #222; }
+        .about h2 { margin-bottom: 20px; font-size: 2em; }
+        .about p { font-size: 1.2em; max-width: 800px; margin: 0 auto; line-height: 1.5; color: #ccc; }
+
+        /* Support section styling */
+        .support { padding: 50px 20px; text-align: center; background: #444; }
+        .support h2 { margin-bottom: 20px; font-size: 2em; }
+        .support p { font-size: 1.2em; max-width: 800px; margin: 0 auto; line-height: 1.5; color: #ccc; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; font-size: 1em; color: #000; border: 1px solid #ccc; border-radius: 5px; }
+        button { display: inline-block; margin-top: 20px; padding: 10px 30px; font-size: 1.1em; background-color: #76b900; color: #fff; border: none; cursor: pointer; text-decoration: none; transition: 0.3s; border-radius: 5px; }
+        button:hover { background-color: #5c9400; }
+
+        /* Privacy Policy section styling */
+        .privacy { padding: 50px 20px; text-align: center; background: #222; }
+        .privacy h2 { margin-bottom: 20px; font-size: 2em; }
+        .privacy p { font-size: 1.2em; max-width: 800px; margin: 0 auto; line-height: 1.5; color: #ccc; }
+        .privacy ul { list-style: none; padding: 0; color: #ccc; }
+
+        /* Terms of Service section styling */
+        .terms { padding: 50px 20px; text-align: center; background: #222; }
+        .terms h2 { margin-bottom: 20px; font-size: 2em; }
+        .terms p { font-size: 1.2em; max-width: 800px; margin: 0 auto; line-height: 1.5; color: #ccc; }
+        .terms ul { list-style: none; padding: 0; color: #ccc; }
+
+        /* Footer styling */
+        footer { background: #000; padding: 20px; text-align: center; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+<!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" height="40">
+        </div>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#support">Support</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to SKULL CHUNKS</h1>
+        <p>"Unleash Your Gaming Potential."</p>
+       <button>Learn More</button>
+
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-cards">
+            <!-- Product Card 1 -->
+            <div class="card">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Skull Chunks Dominator Pad</h3>
+                <p>The ultimate mouse pad for gaming and beyond.</p>
+                <a href="product1-details.html"><button>View Details</button></a>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="card">
+                <img src="product2.png" alt="Product 2">
+                <h3>Skull Chunks Reaper Board</h3>
+                <p>The ultimate keyboard for gaming and domination with unmatched performance.</p>
+                <a href="product2-details.html"><button>View Details</button></a>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="card">
+                <img src="product3.png" alt="Product 3">
+                <h3>Skull Chunks Deathclaw</h3>
+                <p>Precision, Performance, and Domination in Every Keypress.</p>
+                <a href="product3-details.html"><button>View Details</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Skull Chunks</h2>
+        <p>Skull Chunks is dedicated to providing gamers with top-of-the-line products that not only perform exceptionally but also stand out with unique and edgy designs. Our mission is to enhance every gaming experience with precision, durability, and style.</p>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support">
+        <h2>Support</h2>
+        <p>Need help? Our support team is here to assist you with any questions or issues you may have. Feel free to reach out to us for troubleshooting tips, product information, or any other inquiries.</p>
+   <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <a href="mailto:skullchunks@gmail.com" class="button">Email Us</a>
+    </section>
+ <!-- Privacy Policy Section -->
+    <section id="privacy" class="privacy">   
+  <h2>Privacy Policy</h2>
+        <p>At Skull Chunks, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase from us.</p>
+        <p><strong>Information We Collect</strong></p>
+        <p>We may collect personal information from you in various ways, including but not limited to when you visit our site, register on the site, place an order, subscribe to the newsletter, fill out a form, and in connection with other activities, services, features, or resources we make available on our site. You may be asked for, as appropriate, name, email address, mailing address, phone number, and credit card information.</p>
+        <p><strong>How We Use Collected Information</strong></p>
+        <p>Skull Chunks may collect and use your personal information for the following purposes:</p>
+        <ul>
+            <li>To improve customer service: Your information helps us to respond more effectively to your customer service requests and support needs.</li>
+            <li>To personalize user experience: We may use information in the aggregate to understand how our users as a group use the services and resources provided on our site.</li>
+            <li>To improve our site: We continually strive to improve our website offerings based on the information and feedback we receive from you.</li>
+            <li>To process transactions: We may use the information users provide about themselves when placing an order only to provide service to that order. We do not share this information with outside parties except to the extent necessary to provide the service.</li>
+            <li>To send periodic emails: The email address users provide for order processing will only be used to send them information and updates pertaining to their order. It may also be used to respond to their inquiries, and/or other requests or questions.</li>
+        </ul>
+        <p><strong>Protection of Your Information</strong></p>
+        <p>We adopt appropriate data collection, storage, and processing practices and security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information, username, password, transaction information, and data stored on our site.</p>
+        <p><strong>Sharing Your Personal Information</strong></p>
+        <p>We do not sell, trade, or rent users' personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates, and advertisers for the purposes outlined above.</p>
+        <p><strong>Changes to This Privacy Policy</strong></p>
+        <p>Skull Chunks has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the bottom of this page. We encourage users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect.</p>
+        <p><strong>Your Acceptance of These Terms</strong></p>
+        <p>By using this site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our site. Your continued use of the site following the posting of changes to this policy will be deemed your acceptance of those changes.</p>
+                </ul>
+    </section>
+
+      <!-- Terms of Service Section -->
+   <section id="terms" class="terms">
+    <h2>Terms of Service</h2>
+    <p>Welcome to Skull Chunks. Please read these Terms of Service carefully before using our website or making a purchase. By accessing or using our site, you agree to be bound by these terms. If you do not agree to these terms, please do not use our site.</p>
+    <p><strong>Acceptance of Terms</strong></p>
+    <p>By using our site, you signify your acceptance of these terms of service. If you do not agree to these terms, please do not use our site. Your continued use of the site following the posting of changes to these terms will be deemed your acceptance of those changes.</p>
+    <p><strong>Changes to Terms</strong></p>
+    <p>Skull Chunks reserves the right to update or change these terms at any time. We encourage you to review these terms periodically for any changes. Your continued use of the site after any modifications to the terms will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified terms.</p>
+    <p><strong>Use of Site</strong></p>
+    <p>You agree to use our site only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the site. Prohibited behavior includes harassing or causing distress or inconvenience to any other user, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within our site.</p>
+    <p><strong>Intellectual Property Rights</strong></p>
+    <p>All content on this site, including but not limited to text, graphics, logos, images, and software, is the property of Skull Chunks and is protected by copyright, trademark, and other intellectual property laws. You agree not to reproduce, duplicate, copy, sell, resell, or exploit any portion of the site without our express written permission.</p>
+    <p><strong>Limitation of Liability</strong></p>
+    <p>Skull Chunks shall not be liable for any indirect, incidental, special, or consequential damages resulting from the use or the inability to use our site or for the cost of procurement of substitute goods and services or resulting from any goods or services purchased or obtained through the site or resulting from unauthorized access to or alteration of your transmissions or data, including but not limited to, damages for loss of profits, use, data, or other intangibles, even if Skull Chunks has been advised of the possibility of such damages.</p>
+    <p><strong>Governing Law</strong></p>
+    <p>These terms shall be governed and construed in accordance with the laws of India, without regard to its conflict of law provisions. You agree that any legal action or proceeding between Skull Chunks and you for any purpose concerning these terms or the parties' obligations hereunder shall be brought exclusively in a federal or state court of competent jurisdiction sitting in India.</p>
+   <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <a href="mailto:skullchunks@gmail.com" class="button">Email Us</a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 SKULL CHUNKS Corporation BY ARADHY DUBEY : an INDIAN BRAND.
